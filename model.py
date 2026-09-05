@@ -333,8 +333,13 @@ def encode_corpus_to_int_array(text, stoi):
     return np.array(encode_string(text,stoi), dtype=np.int64)
     pass
 
-# Step 36 - pick_split_point (not yet solved)
-# TODO: implement
+# Step 36 - pick_split_point
+import math
+def pick_split_point(n, train_frac):
+    """Return integer split index so data[:idx] is train and data[idx:] is val."""
+    # TODO: compute the integer split index from n and train_frac
+    return math.floor(n*train_frac)
+    pass
 
 # Step 37 - slice_train_and_val (not yet solved)
 # TODO: implement
