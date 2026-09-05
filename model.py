@@ -59,8 +59,15 @@ def decode_ids(ids, itos):
     return "".join(decode_int(i,itos) for i in ids)
     pass
 
-# Step 8 - make_1d_array (not yet solved)
-# TODO: implement
+# Step 8 - make_1d_array
+import numpy as np
+
+def make_1d_array(values):
+    """Create a 1D NumPy array from a Python list of numbers."""
+    # TODO: convert the input list into a 1D numpy ndarray
+    values = np.asarray(values)
+    return values
+    pass
 
 # Step 9 - get_array_shape (not yet solved)
 # TODO: implement
