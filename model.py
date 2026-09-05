@@ -223,8 +223,14 @@ def sum_axis1(arr):
     return arr.sum(axis=1)
     pass
 
-# Step 26 - max_along_axis (not yet solved)
-# TODO: implement
+# Step 26 - max_along_axis
+import numpy as np
+
+def max_along_axis(arr, axis):
+    """Return the maximum of arr along the given axis, with that axis removed."""
+    # TODO: compute the maximum value of arr along the given axis
+    return arr.max(axis=axis)
+    pass
 
 # Step 27 - matmul (not yet solved)
 # TODO: implement
