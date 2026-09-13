@@ -410,10 +410,10 @@ def stack_y_batch(data, offsets, block_size):
 # Step 44 - get_batch
 def get_batch(data, block_size, batch_size, rng):
     # TODO: package one training batch (X, Y) of shape (batch_size, block_size) from data using rng.
-    offsets = sample_random_batch_offsets(data, block_size, batch_size, rng)
+    offsets = sample_random_batch_offsets(len(data), block_size, batch_size, rng)
     X = stack_x_batch(data, offsets, block_size)
     Y = stack_y_batch(data, offsets, block_size)
-    return x, Y
+    return X, Y
     pass
 
 # Step 45 - allocate_count_matrix (not yet solved)
